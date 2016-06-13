@@ -1,0 +1,22 @@
+<div class="scroll animated zoomIn">
+<section class="dataDiv">
+    <div ng-repeat="item in response" ng-if="dorr(item)">
+        <ul class="data">
+            <hr/>
+            <li><strong>Name: </strong>{{item.first_name}} {{item.last_name}}</li>
+            <li><strong>Office: </strong>{{item.office}}</li>
+            <li><strong>Phone: </strong>{{item.phone}}</li>
+            <li><strong>Fax: </strong>{{item.fax}}</li>
+            <li><strong>Party: </strong>{{item.party}}</li>
+            <li><strong>Chamber: </strong>{{item.chamber}}</li>
+            <li><strong>State: </strong>{{item.state_name}}</li>
+            <li><strong>Term Start: </strong>{{item.term_start}}</li>
+            <li><strong>Term End: </strong>{{item.term_end}}</li>
+            <li><strong>Facebook Id: </strong>{{item.facebook_id}}</li>
+            <li><strong>Twitter Id: </strong>{{item.twitter_id}}</li>
+            <li><strong>Website: </strong>{{item.website}}</li>
+            <hr/>
+        </ul>
+    </div>
+    </section>
+</div>
