@@ -1,10 +1,12 @@
-<div class="scroll animated zoomIn">
+<!-- <div class="scroll animated zoomIn"> -->
+<span>Search:</span><p><input type="text" title= "Search will filter down to entities with any relation to your query" ng-model="search"></p>
+<div>
 <section class="dataDiv">
-    <div ng-repeat="item in response">
+    <div ng-repeat="item in response | filter: search">
 
     <ul class="data">
         <hr/>
-        <li><strong>Name: </strong>{{item.Name}} {{item.last_name}}</li>
+        <li><strong>Name: </strong>{{item.Name}}</li>
         <li><strong>Street Address: </strong>{{item.Street1}}</li>
         <li><strong>City: </strong>{{item.City}}</li>
         <li><strong>State: </strong>{{item.StateTer}}</li>
